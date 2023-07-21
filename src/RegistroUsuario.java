@@ -14,6 +14,12 @@ public class RegistroUsuario {
 
     //Array para guardar info de usuarios
     ArrayList<Usuario>usuarios=new ArrayList<Usuario>();
+
+    //para acceder a array desde otra clase
+    public ArrayList<Usuario> getUsuarios(){
+        return usuarios;
+    }
+
     //Ruta del .dat
     String filepath="usuario.dat";
     public RegistroUsuario() {
@@ -61,7 +67,7 @@ public class RegistroUsuario {
     }
 
     public void mostrar_ventana(){
-        Login login=new Login();
+        Login login=new Login(this);
         JFrame frameLogin = new JFrame("Login");
         frameLogin.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frameLogin.setSize(500,500);
