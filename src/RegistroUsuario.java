@@ -70,16 +70,19 @@ public class RegistroUsuario {
         Login login=new Login(this);
         JFrame frameLogin = new JFrame("Login");
         frameLogin.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frameLogin.setSize(500,500);
+        frameLogin.setResizable(false);
+        frameLogin.setSize(450,275);
         frameLogin.setLocationRelativeTo(null);
         frameLogin.setVisible(true);
         frameLogin.setContentPane(login.getRootPanel());
     }
+
     public static void main(String[] args) {
     JFrame frame= new JFrame("Estudiantes");
     frame.setContentPane(new RegistroUsuario().rootPanel);
     frame.setLocationRelativeTo(null);
-    frame.setSize(800,800);
+    frame.setSize(550,400);
+    frame.setResizable(false);
     frame.setVisible(true);
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
