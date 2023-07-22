@@ -36,7 +36,7 @@ Este programa consta de aparatos: Registro y Login, ambas ventanas funcionan de 
 La identificación de errores en usuario y contraseña ha sido implementada en ambas ventanas para
 advertir al usuario de un mal ingreso de sus credenciales al sistema, esto refleja un mecanismo de 
 experiencia de usuario acertiva y dinámica. 
-- <b>Para el Inicio de Sesión:</b>
+- <b>Para el Inicio de Sesión:</b> <br>
 ![](Images/inicio_error.png)
-- <b>Para el Registro de usuarios:</b>
+- <b>Para el Registro de usuarios:</b><br>
 ![](Images/error.png)
