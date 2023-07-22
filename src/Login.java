@@ -9,6 +9,7 @@ public class Login {
     private JButton iniciarSesionButton;
     private JPasswordField inputPassword;
     private JCheckBox seePasswordCheckBox;
+    private JButton registrateButton;
 
     public JPanel getRootPanel() {
         return rootPanel;
@@ -63,6 +64,8 @@ public class Login {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
+        frame.setResizable(false);
+        frame.setSize(450,275);
     }
 
     //metodo para verificar credenciales
